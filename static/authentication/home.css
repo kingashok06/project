@@ -1,0 +1,105 @@
+
+/* body{
+    background: url('/static/img/marten-bjork-n_IKQDCyrG0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+.txt1{
+  text-align: center;
+  color: azure;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    padding: 20px 30px;
+    margin-left: -40px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    margin-right: 10px;
+  }
+  
+  .logo {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 500;
+    color: white;
+    margin-left: 25px;
+  }
+  
+  #checkbox,
+  .menubtn {
+    display: none;
+    cursor: pointer;
+  }
+  
+  section {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -10px;
+  }
+
+
+  
+  .one {
+    background-image: url(https://images.unsplash.com/photo-1517840901100-8179e982acb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-attachment: fixed;
+  }
+  .two {
+    background-image: url(https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  }
+  
+  .three {
+    background-image: url(https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .menubtn {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .im.im-menu-dot-h {
+      color: white;
+      margin-left: auto;
+    }
+    .menu {
+      display: none;
+    }
+  
+    #checkbox:checked + .menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: calc(50vh - 100px);
+      right: 50%;
+      transform: translateX(50%);
+      text-align: center;
+      background-color: black;
+      padding: 50px;
+      border-radius: 20px;
+      z-index: 9999;
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.45);
+    }
+  }

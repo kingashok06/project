@@ -1,0 +1,52 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+    <link rel="stylesheet" type = 'text/css' href= "{% static 'authentication\style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+    <div class="container">
+      <div class = 'forms-container'>
+        <div class = 'title'> Sign In</div>
+        <div class="sigup">
+          <form action = '/signup' method="POST">
+              {% csrf_token %}
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                  <label for= ''>Username</label>
+                  <input class="inputfield" type = 'text' id = 'username' name = 'username' placeholder = 'Create Username (only letter and number are allowed' required>
+                  <br>
+                  <label for= ''>First Name</label>
+                  <input class="inputfield" type = 'text' id = 'fname' name = 'fname' placeholder = 'Enter your first name' required>
+                  <br>
+                  
+                  <label for= ''>Last Name</label>
+                  <input class="inputfield" type = 'text' id = 'lname' name = 'lname' placeholder = 'Enter your last name' required>
+                  <br>
+                  
+                  <label for= ''>Email</label>
+                  <input class="inputfield" type = 'email' id = 'email' name = 'email' placeholder = 'Enter email' required>
+                  <br>
+                  
+                  <label for= ''>Password</label>
+                  <input class="inputfield" type = 'password' id = 'pass1' name = 'pass1' placeholder = 'Enter password' required>
+                  <br>
+                  
+                  <label for= ''>Confirm Password</label>
+                  <input class="inputfield" type = 'password' id = 'pass2' name = 'pass2' placeholder = 'Enter confirm password' required>
+                  <br>
+                  
+                  <button type ='submit' > Sign Up </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    </body>
+</html>
