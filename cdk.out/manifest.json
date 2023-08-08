@@ -1,0 +1,226 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CognitoStack6DB0B004": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CognitoStack6DB0B004.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CognitoStack/CognitoStack/UserPool/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPool6BA7E5F2",
+            "trace": [
+              "new UserPool (/home/dev25/Videos/cognito/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:888:22)",
+              "new CognitoStack (/home/dev25/Videos/cognito/lib/cognito-stack.ts:59:22)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/bin/cognito.ts:9:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Module.m._compile (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "phase4 (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/CognitoStack/CognitoStack/UserPool/AppClient/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolAppClientDD0407EC",
+            "trace": [
+              "new UserPoolClient (/home/dev25/Videos/cognito/node_modules/@aws-cdk/aws-cognito/lib/user-pool-client.ts:377:22)",
+              "UserPool.addClient (/home/dev25/Videos/cognito/node_modules/@aws-cdk/aws-cognito/lib/user-pool.ts:714:12)",
+              "new CognitoStack (/home/dev25/Videos/cognito/lib/cognito-stack.ts:62:32)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/bin/cognito.ts:9:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Module.m._compile (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "phase4 (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/CognitoStack/CognitoStack/UserPoolId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "UserPoolId",
+            "trace": [
+              "new CognitoStack (/home/dev25/Videos/cognito/lib/cognito-stack.ts:67:5)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/bin/cognito.ts:9:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Module.m._compile (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "phase4 (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/CognitoStack/CognitoStack/AppClientId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppClientId",
+            "trace": [
+              "new CognitoStack (/home/dev25/Videos/cognito/lib/cognito-stack.ts:71:5)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/bin/cognito.ts:9:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Module.m._compile (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dev25/Videos/cognito/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "phase4 (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/home/dev25/Videos/cognito/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1149:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1203:10)",
+              "Module.load (node:internal/modules/cjs/loader:1027:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:868:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)",
+              "node:internal/main/run_main_module:23:47"
+            ]
+          }
+        ],
+        "/CognitoStack/CognitoStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)",
+              "process.emit (node:domain:489:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/home/dev25/Videos/cognito/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ],
+        "/CognitoStack/CognitoStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)",
+              "process.emit (node:domain:489:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/home/dev25/Videos/cognito/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CognitoStack/CognitoStack"
+    },
+    "CognitoStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CognitoStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CognitoStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)",
+              "process.emit (node:domain:489:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/home/dev25/Videos/cognito/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ],
+        "/CognitoStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/dev25/Videos/cognito/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:628:26)",
+              "process.emit (node:events:513:28)",
+              "process.emit (node:domain:489:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/home/dev25/Videos/cognito/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CognitoStack"
+    }
+  }
+}
