@@ -1,12 +1,13 @@
-import * as cdk from '@aws-cdk/core';
-import * as cognito from "aws-cdk-lib/aws-cognito";
-import * as ses from '@aws-cdk/aws-ses';
-import * as iam from '@aws-cdk/aws-iam';
 import * as aws from 'aws-sdk';
-import { Construct } from 'constructs';
 import { createMigrateUserLambda } from './migrate-user-handler';
+import * as cdk from 'aws-cdk-lib';
+import * as cognito from 'aws-cdk-lib/aws-cognito';
+import * as ses from 'aws-cdk-lib/aws-ses';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import { Construct } from 'constructs';
+
 export class CognitoStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
     const sesClient = new aws.SES();
 
@@ -54,9 +55,10 @@ export class CognitoStack extends cdk.Stack {
         requireSymbols: true,
       },
     };
-
-
+    
+    
     const userPool = new cognito.UserPool(this, 'UserPool', userPoolProps);
+    // const userPool = new cognito.UserPool(this, 'UserPool', userPoolProps);
     // Inside the CognitoStack class
     const migrateUserLambda = createMigrateUserLambda(this, 'MigrateUserLambda');
 
@@ -81,3 +83,4 @@ export class CognitoStack extends cdk.Stack {
     });
   }
 }
+
