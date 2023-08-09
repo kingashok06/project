@@ -49,5 +49,3 @@ export const migrateUserHandler = async (event: CognitoUserPoolTriggerEvent): Pr
 
   return event;
 };
-
-
